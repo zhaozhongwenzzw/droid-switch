@@ -1,0 +1,17 @@
+.sort-filter {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) 0;
+}
+
+.sort-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.sort-buttons {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+

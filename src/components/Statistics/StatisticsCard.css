@@ -1,0 +1,105 @@
+.statistics-card {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+}
+
+.statistics-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-xl);
+}
+
+.statistics-title {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-sm);
+}
+
+.title-main {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.title-sub {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.statistics-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.history-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 6px 12px;
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.history-btn:hover {
+  color: var(--color-primary);
+}
+
+.statistics-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-lg);
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.stat-item:hover {
+  border-color: var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.stat-value {
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+}
+
+.stat-value-default {
+  color: var(--color-text-primary);
+}
+
+.stat-value-orange {
+  color: var(--color-orange);
+}
+
+.stat-value-green {
+  color: var(--color-green);
+}
+
+.stat-percentage {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}

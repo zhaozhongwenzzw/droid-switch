@@ -1,0 +1,190 @@
+.key-card {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.key-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.key-card-active {
+  border-color: var(--color-primary);
+}
+
+.key-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-xs);
+}
+
+.key-header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.key-header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.key-expiry {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.key-email {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+}
+
+.key-card-body {
+  margin-bottom: var(--spacing-xs);
+}
+
+.key-info-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: 2px;
+}
+
+.info-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  min-width: 50px;
+  flex-shrink: 0;
+}
+
+.info-value {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-primary);
+}
+
+.api-key-value {
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  color: var(--color-text-muted);
+}
+
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: var(--spacing-xs);
+  flex-shrink: 0;
+}
+
+.copy-btn:hover {
+  background-color: var(--color-bg-secondary);
+  border-color: var(--color-border);
+  color: var(--color-text-primary);
+}
+
+.copy-btn.copied {
+  background-color: transparent;
+  border-color: var(--color-green);
+  color: var(--color-green);
+}
+
+.key-api-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.api-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.api-value {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+}
+
+.key-quota-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quota-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.quota-text {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.quota-used {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.quota-remaining {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.remaining-value {
+  color: var(--color-green);
+  font-weight: 600;
+}
+
+.key-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.key-actions .delete-btn:hover {
+  color: var(--color-red);
+  border-color: var(--color-red);
+}
+
+.key-actions .generate-card-btn:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.key-actions .sold-btn:hover {
+  color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
+.key-actions .sold-btn.is-sold {
+  color: var(--color-orange);
+  background-color: rgba(249, 115, 22, 0.1);
+  border-color: var(--color-orange);
+}
+
+/* 已卖出卡片样式 */
+.key-card-sold {
+  border-color: var(--color-orange);
+  opacity: 0.85;
+}
+
+.key-card-sold:hover {
+  border-color: var(--color-orange);
+}
